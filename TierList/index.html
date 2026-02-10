@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8" />
+  <title>TN TIER | Tier Player List</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <style>
+    :root {
+      --bg: #0b0e14;
+      --card: #151a26;
+      --accent: #ff4655;
+      --text: #e6e6eb;
+      --muted: #9aa0b3;
+    }
+
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+
+    body {
+      font-family: "Segoe UI", system-ui, sans-serif;
+      background: var(--bg);
+      color: var(--text);
+      padding: 40px 20px;
+    }
+
+    h1 {
+      text-align: center;
+      letter-spacing: 0.12em;
+      margin-bottom: 40px;
+    }
+
+    .tier-section {
+      max-width: 900px;
+      margin: 0 auto 40px;
+      background: var(--card);
+      border-radius: 16px;
+      padding: 24px;
+    }
+
+    .tier-title {
+      font-size: 1.4rem;
+      margin-bottom: 16px;
+      color: var(--accent);
+      letter-spacing: 0.08em;
+    }
+
+    table {
+      width: 100%;
+      border-collapse: collapse;
+    }
+
+    th, td {
+      padding: 12px 10px;
+      text-align: left;
+    }
+
+    th {
+      font-size: 0.85rem;
+      color: var(--muted);
+      border-bottom: 1px solid #2a3147;
+    }
+
+    tr:not(:last-child) td {
+      border-bottom: 1px solid #1f2433;
+    }
+
+    .rank {
+      font-weight: 700;
+    }
+
+    .note {
+      margin-top: 10px;
+      font-size: 0.8rem;
+      color: var(--muted);
+    }
+
+    .tiers h2 {
+      font-size: 2rem;
+      margin-bottom: 24px;
+    }
+  </style>
+</head>
+<body>
+
+  <h1>TN TIER – PLAYER LIST</h1>
+
+  <!-- ===== DIAMOND TIER ===== -->
+  <section class="tier-section">
+    <div class="tier-title" id="diamond">DIAMOND TIER</div>
+    <table>
+      <thead>
+        <tr>
+          <th>#</th>
+          <th>Player</th>
+          <th>Kills</th>
+          <th>Deaths</th>
+          <th>Win Rate</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td class="rank">1</td>
+          <td>TN_Alice</td>
+          <td>312</td>
+          <td>98</td>
+          <td>76%</td>
+        </tr>
+        <tr>
+          <td class="rank">2</td>
+          <td>BladeTN</td>
+          <td>289</td>
+          <td>110</td>
+          <td>72%</td>
+        </tr>
+        <tr>
+          <td class="rank">3</td>
+          <td>KuroTN</td>
+          <td>260</td>
+          <td>121</td>
+          <td>68%</td>
+        </tr>
+      </tbody>
+    </table>
+    <div class="note">※ 上位 Tier は毎日更新</div>
+  </section>
+
+  <!-- ===== GOLD TIER ===== -->
+  <section class="tier-section">
+    <div class="tier-title" id="gold">GOLD TIER</div>
+    <table>
+      <thead>
+        <tr>
+          <th>#</th>
+          <th>Player</th>
+          <th>Kills</th>
+          <th>Deaths</th>
+          <th>Win Rate</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td class="rank">1</td>
+          <td>TN_Rex</td>
+          <td>180</td>
+          <td>140</td>
+          <td>56%</td>
+        </tr>
+        <tr>
+          <td class="rank">2</td>
+          <td>NeoTN</td>
+          <td>165</td>
+          <td>150</td>
+          <td>52%</td>
+        </tr>
+        <tr>
+          <td class="rank">3</td>
+          <td>FoxTN</td>
+          <td>150</td>
+          <td>148</td>
+          <td>50%</td>
+        </tr>
+      </tbody>
+    </table>
+  </section>
+
+</body>
+</html>

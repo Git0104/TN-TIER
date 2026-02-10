@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8" />
+  <title>TN TIER | Official Website</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="TN TIER は Tier 制を採用した Minecraft PvP サーバー。実力が可視化される競技的な戦場。" />
+  <style>
+    :root {
+      --bg: #0b0e14;
+      --card: #151a26;
+      --accent: #ff4655;
+      --text: #e6e6eb;
+      --muted: #9aa0b3;
+    }
+
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+
+    body {
+      font-family: "Segoe UI", system-ui, sans-serif;
+      background: radial-gradient(circle at top, #151a26, #0b0e14);
+      color: var(--text);
+      line-height: 1.7;
+    }
+
+    header {
+      padding: 90px 20px 70px;
+      text-align: center;
+    }
+
+    header h1 {
+      font-size: clamp(2.5rem, 6vw, 4rem);
+      letter-spacing: 0.15em;
+    }
+
+    header span {
+      color: var(--accent);
+    }
+
+    header p {
+      margin-top: 20px;
+      color: var(--muted);
+      font-size: 1.1rem;
+    }
+
+    .container {
+      max-width: 1100px;
+      margin: 0 auto;
+      padding: 0 20px 80px;
+    }
+
+    /* Tier links */
+    .tier-links {
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+      gap: 14px;
+      margin: 40px 0 80px;
+    }
+
+    .tier-links a {
+      display: inline-block;
+      padding: 14px 26px;
+      border-radius: 999px;
+      background: #1f2433;
+      border: 1px solid #2a3147;
+      color: var(--text);
+      text-decoration: none;
+      font-weight: 700;
+      letter-spacing: 0.08em;
+      transition: transform .2s ease, box-shadow .2s ease, background .2s ease;
+    }
+
+    .tier-links a:hover {
+      background: var(--accent);
+      transform: translateY(-4px);
+      box-shadow: 0 12px 36px rgba(255,70,85,0.45);
+    }
+
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+      gap: 26px;
+    }
+
+    .card {
+      background: var(--card);
+      border-radius: 18px;
+      padding: 30px;
+      box-shadow: 0 10px 30px rgba(0,0,0,0.45);
+    }
+
+    .card h2 {
+      margin-bottom: 12px;
+      font-size: 1.4rem;
+    }
+
+    .card p {
+      color: var(--muted);
+      font-size: 0.95rem;
+    }
+
+    footer {
+      padding: 30px 20px;
+      text-align: center;
+      color: var(--muted);
+      font-size: 0.85rem;
+      border-top: 1px solid #1f2433;
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>TN <span>TIER</span></h1>
+    <p>実力が可視化される、Tier 制 Minecraft PvP サーバー</p>
+  </header>
+
+  <main class="container">
+
+    <!-- Tier direct links (moved to bottom) -->
+
+    <section class="grid">
+      <div class="card">
+        <h2>Tier System</h2>
+        <p>
+          キル数だけで決まらない評価方式。
+          連勝、生存、立ち回りが Tier として反映される。
+        </p>
+      </div>
+
+      <div class="card">
+        <h2>Fair PvP</h2>
+        <p>
+          装備差よりも判断力。
+          初心者が即消えず、上級者が油断できない設計。
+        </p>
+      </div>
+
+      <div class="card">
+        <h2>Competitive</h2>
+        <p>
+          勝っても安定しないランキング。
+          常に順位が動く、緊張感のある戦場。
+        </p>
+      </div>
+    </section>
+
+    <!-- Tier direct links (bottom) -->
+    <div style="text-align:center; margin-top:40px; margin-bottom:20px; letter-spacing:0.2em; color: var(--text); font-weight:800; font-size:1.8rem;">
+      TIER
+    </div>
+    <section class="tier-links">
+      <a href="/TierList/index.html#diamond">DIAMOND</a>
+      <a href="/TierList/index.html#gold">GOLD</a>
+      <a href="/TierList/index.html#silver">SILVER</a>
+      <a href="/TierList/index.html#bronze">BRONZE</a>
+    </section>
+
+  </main>
+
+  <footer>
+    © 2026 TN TIER | Official Website
+  </footer>
+
+</body>
+</html>
